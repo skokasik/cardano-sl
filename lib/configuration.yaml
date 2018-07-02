@@ -14773,8 +14773,8 @@ mainnet_full: &mainnet_full
     <<: *mainnet_base_core
     genesis:
       src:
-        file: mainnet-genesis.json
-        hash: 5f20df933584822601f9e3f8c024eb5eb252fe8cefb24d1317dc3d432e940ebb
+        - mainnet-genesis.json
+        - 5f20df933584822601f9e3f8c024eb5eb252fe8cefb24d1317dc3d432e940ebb
 
 mainnet_wallet_win64: &mainnet_wallet_win64
   <<: *mainnet_full
@@ -14819,8 +14819,8 @@ testnet_full: &testnet_full
     <<: *mainnet_base_core
     genesis:
       src:
-        file: testnet-genesis.json
-        hash: f0204568043f6cb8068a81ddc1e9ca575615aed12a3a815678afc5ca12a94eb8
+        - testnet-genesis.json
+        - f0204568043f6cb8068a81ddc1e9ca575615aed12a3a815678afc5ca12a94eb8
 
   update: &testnet_full_update
     applicationName: cardano-sl
@@ -14897,8 +14897,8 @@ mainnet_dryrun_full: &mainnet_dryrun_full
     <<: *mainnet_base_core
     genesis:
       src:
-        file: mainnet-genesis-dryrun-with-stakeholders.json
-        hash: c6a004d3d178f600cd8caa10abbebe1549bef878f0665aea2903472d5abf7323
+        - mainnet-genesis-dryrun-with-stakeholders.json
+        - c6a004d3d178f600cd8caa10abbebe1549bef878f0665aea2903472d5abf7323
 
 mainnet_dryrun_wallet_win64: &mainnet_dryrun_wallet_win64
   <<: *mainnet_dryrun_full
@@ -14944,8 +14944,8 @@ mainnet_staging_short_epoch_full: &mainnet_staging_short_epoch_full
     <<: *mainnet_base_core
     genesis:
       src:
-        file: mainnet-staging-short-epoch-genesis.json
-        hash: 82f274fb611a7637c8162ebd2a5b2b2852fa82e5230e206e87d4eac97aa96016
+        - mainnet-staging-short-epoch-genesis.json
+        - 82f274fb611a7637c8162ebd2a5b2b2852fa82e5230e206e87d4eac97aa96016
   update:
     applicationName: cardano-sl
     applicationVersion: 0
@@ -15113,8 +15113,8 @@ internal_staging_full: &internal_staging_full
     <<: *internal_staging_gen_core
     genesis:
       src:  # TODO: it doesn't exist yet
-        file: internal-staging-genesis.json
-        hash: f73231256fe6784c408e8a31b7bb8250f80ce64fdbdec137ad1da2faa257a166
+        - internal-staging-genesis.json
+        - f73231256fe6784c408e8a31b7bb8250f80ce64fdbdec137ad1da2faa257a166
   update:
     applicationName: cardano-sl
     applicationVersion: 0
